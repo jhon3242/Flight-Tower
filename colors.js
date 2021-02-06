@@ -4,8 +4,10 @@ var Body={
   },
   setColor : function(color){
     document.querySelector('body').style.color = color;
+    document.querySelector('h1').style.borderColor = color;
   }
 }
+
 var Links={
   setColor:function(color){
     var alist=document.querySelectorAll('a');
@@ -20,10 +22,16 @@ var Links={
 
 
 
+
+
+
+
 function nighthandle(self){
   if(self.value==='Night'){
     Body.setBackgroundColor('black');
     Body.setColor('white');
+
+
 
     Links.setColor('powderblue');
     self.value='Day';
